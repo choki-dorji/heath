@@ -9,6 +9,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  webpack: (config) => {
+    config.externals.push({
+      '@prisma/client': '@prisma/client',
+    });
+    return config;
+  },
 }
 
 export default nextConfig
