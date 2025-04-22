@@ -86,9 +86,32 @@ export default function CreateCarePlanPage() {
     e.preventDefault()
     setIsSubmitting(true)
 
+    // Prepare data for API
+    const apiData = {
+      name: formData.planName, 
+      description: formData.notes, // Assuming 'notes' field maps to description
+      conditions: formData.conditions.map(c => c.name), // Extract condition names
+      medications: formData.medications.map(m => m.name), // Extract medication names
+      // patientName: formData.patientName, // Include if API supports it
+      // dateOfBirth: formData.dateOfBirth, // Include if API supports it
+      // allergies: formData.allergies, // Include if API supports it
+      // emergencyContact: formData.emergencyContact // Include if API supports it
+    }
+
     try {
-      // In a real app, this would save the care plan to a database
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+      const response = await fetch('/api/care-plans', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(apiData),
+        credentials: 'include',
+      })
+
+      if (!response.ok) {
+        const errorData = await response.json()
+        throw new Error(errorData.error || 'Failed to create care plan')
+      }
 
       toast({
         title: "Care plan created",
@@ -97,9 +120,10 @@ export default function CreateCarePlanPage() {
 
       router.push("/dashboard")
     } catch (error) {
+      console.error("Care plan creation error:", error)
       toast({
         title: "Error creating care plan",
-        description: "There was a problem creating your care plan. Please try again.",
+        description: error instanceof Error ? error.message : "There was a problem creating your care plan. Please try again.",
         variant: "destructive",
       })
     } finally {

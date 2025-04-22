@@ -17,7 +17,7 @@ export default function Home() {
                 Your Health Journey, <span className="text-primary-600">Simplified</span>
               </h1>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
-                Access personalized care plans, expert answers to your health questions, and manage your healthcare
+                Access personalized care plans, expert answers to your health questions, and manage your ONCANA
                 journey all in one place.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -37,7 +37,7 @@ export default function Home() {
                 <div className="absolute -bottom-6 -right-6 w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full"></div>
                 <img
                   src="/banner.jpg?height=400&width=500"
-                  alt="Healthcare platform illustration"
+                  alt="ONCANA platform illustration"
                   className="rounded-lg shadow-lg relative z-10"
                 />
               </div>
@@ -64,7 +64,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3 dark:text-white">Expert Q&A</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Browse through categorized health questions and answers from healthcare professionals.
+                Browse through categorized health questions and answers from ONCANA professionals.
               </p>
             </div>
 
@@ -150,7 +150,7 @@ export default function Home() {
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Take Control of Your Health?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Join thousands of users who have simplified their healthcare journey.
+            Join thousands of users who have simplified their ONCANA journey.
           </p>
           <Button asChild size="lg" variant="secondary" className="focus-visible-ring">
             <Link href="/auth/signup">Get Started Today</Link>
@@ -164,7 +164,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4 dark:text-white">What Our Users Say</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Hear from people who have transformed their healthcare experience with our platform.
+              Hear from people who have transformed their ONCANA experience with our platform.
             </p>
           </div>
 
@@ -206,7 +206,7 @@ export default function Home() {
               </div>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 "As a caregiver for my mother, this tool has been invaluable. I can keep all her health information
-                organized and easily share it with her healthcare providers."
+                organized and easily share it with her ONCANA providers."
               </p>
               <div className="flex items-center">
                 <Avatar className="h-10 w-10 mr-3">

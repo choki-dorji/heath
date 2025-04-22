@@ -45,8 +45,8 @@ export default function Navbar() {
   }
 
   const navLinks = [
-    { name: "FAQs", href: "/faqs" },
     { name: "Dashboard", href: "/dashboard" },
+    { name: "FAQs", href: "/questions" },
   ]
 
   const isActive = (path: string) => pathname === path
@@ -60,12 +60,12 @@ export default function Navbar() {
         </a>
 
         <div className="flex items-center">
-          <Link href="/" className="flex items-center" aria-label="HealthCare Platform Home">
+          <Link href="/" className="flex items-center" aria-label="ONCANA Platform Home">
             <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary-100 mr-2">
               <Heart className="h-5 w-5 text-primary-600" />
             </div>
-            <span className="text-primary-600 font-bold text-xl mr-1">Health</span>
-            <span className="text-gray-800 font-bold text-xl">Care</span>
+            <span className="text-primary-600 font-bold text-xl">ONC</span>
+            <span className="text-gray-800 font-bold text-xl">ANA</span>
           </Link>
 
           {/* Desktop Navigation */}

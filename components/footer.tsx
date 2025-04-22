@@ -7,10 +7,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center">
-              <span className="text-blue-600 dark:text-blue-400 font-bold text-xl mr-1">Health</span>
-              <span className="text-gray-800 dark:text-white font-bold text-xl">Care</span>
+              <span className="text-blue-600 dark:text-blue-400 font-bold text-xl">ONC</span>
+              <span className="text-gray-800 dark:text-white font-bold text-xl">ANA</span>
             </Link>
-            <p className="mt-4 text-gray-600 dark:text-gray-400 text-sm">Simplifying healthcare management for patients and caregivers.</p>
+            <p className="mt-4 text-gray-600 dark:text-gray-400 text-sm">Simplifying ONCANA management for patients and caregivers.</p>
           </div>
 
           <div>
@@ -78,7 +78,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800 text-center text-gray-500 dark:text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} HealthCare Platform. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} ONCANA Platform. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -22,8 +22,8 @@ export default function ProfilePage() {
 
   // Mock user data
   const [userData, setUserData] = useState({
-    name: "Jane Doe",
-    email: "jane.doe@example.com",
+    name: "Damcho",
+    email: "damcho@gmail.com",
     phone: "555-123-4567",
     avatar: "",
   })
